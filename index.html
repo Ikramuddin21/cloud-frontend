@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X Cloud</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header
+      class="h-[100px] max-w-[1650px] w-full px-8 bg-secondary flex items-center justify-between"
+    >
+      <div>
+        <img src="./src/assets/xCloud_logo_white.png" alt="Logo" />
+      </div>
+
+      <div class="flex items-center space-x-10">
+        <div>
+          <span
+            class="relative after:content-[''] after:h-[3px] after:bg-[#2DC774] after:w-1.5 after:rounded after:absolute after:-top-3"
+            ><i class="fa-regular fa-bell text-white text-xl"></i
+          ></span>
+        </div>
+        <div
+          class="border border-primary rounded-[10px] pl-1 pr-3 py-1 flex items-center gap-[10px]"
+          role="button"
+        >
+          <img
+            src="./src/assets/avatar.png"
+            class="w-10 h-10 rounded-full"
+            alt=""
+          />
+          <h5 class="text-[15px] font-medium">Mark Adam</h5>
+          <img src="./src/assets/arrow_frame.png" class="w-4 h-4" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main
+      class="mt-[80px] max-w-[1050px] w-full p-16 bg-secondary mx-auto flex items-center justify-center"
+    >
+      <div>
+        <div class="flex items-center space-x-[15px]">
+          <h1 class="text-[40px]">Set Up Your Server With</h1>
+          <img src="./src/assets/xCloud_logo_blue.png" alt="" />
+        </div>
+        <p class="text-text_color text-center text-[15px] mt-[15px]">
+          Fill in the details below to get your server set up with xCloud
+        </p>
+
+        <div>
+          <h3 class="text-lg font-medium">Server Details</h3>
+          <div class="flex items-center space-x-[30px]">
+            <div class="mt-4">
+              <label for="server_name" class="text-[#74778E]"
+                >Server Name</label
+              >
+              <input
+                type="text"
+                id="server_name"
+                class="w-full border border-input_border p-[21px] pl-[25px] bg-transparent rounded-[5px] text-text_color mt-2.5"
+                placeholder="Example Site"
+              />
+            </div>
+            <div class="mt-4">
+              <label for="server_name" class="text-[#74778E]"
+                >Server Name</label
+              >
+              <input
+                type="text"
+                id="server_name"
+                class="w-full border border-input_border p-[21px] pl-[25px] bg-transparent rounded-[5px] text-text_color mt-2.5"
+                placeholder="Example Site"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
