@@ -54,39 +54,233 @@
     <main
       class="mt-[80px] max-w-[1050px] w-full p-16 bg-secondary mx-auto flex items-center justify-center"
     >
-      <div>
-        <div class="flex items-center space-x-[15px]">
+      <div class="w-full">
+        <div class="flex items-center justify-center space-x-[15px]">
           <h1 class="text-[40px]">Set Up Your Server With</h1>
           <img src="./src/assets/xCloud_logo_blue.png" alt="" />
         </div>
         <p class="text-text_color text-center text-[15px] mt-[15px]">
           Fill in the details below to get your server set up with xCloud
         </p>
-
-        <div>
+        <!-- server details -->
+        <div class="mt-[48px]">
           <h3 class="text-lg font-medium">Server Details</h3>
-          <div class="flex items-center space-x-[30px]">
-            <div class="mt-4">
+          <div class="mt-4 flex items-center gap-[30px]">
+            <div class="w-full">
               <label for="server_name" class="text-[#74778E]"
                 >Server Name</label
               >
               <input
                 type="text"
                 id="server_name"
-                class="w-full border border-input_border p-[21px] pl-[25px] bg-transparent rounded-[5px] text-text_color mt-2.5"
+                class="customize-border text-text_color outline-0 focus:border-[#147AFF]"
                 placeholder="Example Site"
               />
             </div>
-            <div class="mt-4">
-              <label for="server_name" class="text-[#74778E]"
-                >Server Name</label
+            <div class="w-full">
+              <label for="tag" class="text-[#74778E]">Add Tag (Optional)</label>
+              <select
+                name="tag"
+                id="tag"
+                class="custom-select customize-border text-text_color outline-0 focus:border-[#147AFF]"
               >
-              <input
-                type="text"
-                id="server_name"
-                class="w-full border border-input_border p-[21px] pl-[25px] bg-transparent rounded-[5px] text-text_color mt-2.5"
-                placeholder="Example Site"
+                <option value="" selected>Select or create tags</option>
+                <option value="tag1">Tag1</option>
+                <option value="tag2">Tag2</option>
+                <option value="tag3">Tag2</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- server type -->
+        <div class="mt-8">
+          <h3 class="text-lg font-medium">Server Type</h3>
+          <div class="mt-4 flex items-center gap-[30px]">
+            <!-- item 1 -->
+            <div
+              class="flex items-center gap-[19px] customize-border hover:border-[#147AFF] cursor-pointer"
+            >
+              <img
+                src="./src/assets/cloud-storage.png"
+                alt="Cloud Image"
+                class="w-[46px]"
               />
+
+              <div>
+                <h4 class="text-xl font-medium">Go Live</h4>
+                <p class="text-text_color mt-2">
+                  Get your site up and running for the world to see by simply
+                  pointing your domain to the server.
+                </p>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div
+              class="flex items-center gap-[19px] customize-border hover:border-[#147AFF] cursor-pointer"
+            >
+              <img
+                src="./src/assets/staging-evn.png"
+                alt="Cloud Image"
+                class="w-[46px]"
+              />
+
+              <div>
+                <h4 class="text-xl font-medium">Staging Environment</h4>
+                <p class="text-text_color mt-2">
+                  Create your site in a staging environment and refine it until
+                  it’s ready for launch.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- blueprints -->
+        <div
+          class="mt-8 bg-primary p-6 rounded flex justify-between items-start"
+        >
+          <div>
+            <h1 class="text-2xl">Blueprints</h1>
+            <p class="text-text_color mt-3">
+              Add the following record to the DNS for your domain to get free
+            </p>
+          </div>
+          <label for="toggle" class="flex items-center cursor-pointer">
+            <input type="checkbox" id="toggle" class="sr-only peer" />
+
+            <!-- outer -->
+            <div
+              class="w-[42px] h-6 bg-[#EEF2F7] rounded-full peer-checked:bg-[#32BA7C] transition duration-300"
+            ></div>
+
+            <!-- inner -->
+            <div
+              class="w-4 h-4 bg-[#9DA2AE] rounded-full absolute translate-x-1 peer-checked:translate-x-6 peer-checked:bg-white transition duration-300 shadow-md"
+            ></div>
+          </label>
+        </div>
+        <!-- blueprints checked -->
+        <div class="mt-8 bg-primary p-6 rounded">
+          <div class="flex justify-between items-start">
+            <div>
+              <h1 class="text-2xl">Blueprints</h1>
+              <p class="text-text_color mt-3">
+                Add the following record to the DNS for your domain to get free
+              </p>
+            </div>
+            <!-- toggle switch button -->
+            <label for="toggle" class="flex items-center cursor-pointer">
+              <input type="checkbox" id="toggle" class="sr-only peer" />
+
+              <!-- outer -->
+              <div
+                class="w-[42px] h-6 bg-[#EEF2F7] rounded-full peer-checked:bg-[#32BA7C] transition duration-300"
+              ></div>
+
+              <!-- inner -->
+              <div
+                class="w-4 h-4 bg-[#9DA2AE] rounded-full absolute translate-x-1 peer-checked:translate-x-6 peer-checked:bg-white transition duration-300 shadow-md"
+              ></div>
+            </label>
+          </div>
+          <!-- blueprints name -->
+          <div class="mt-4 grid grid-cols-3 gap-4">
+            <!-- item 1 -->
+            <div
+              class="bg-secondary rounded-md p-4 flex items-start justify-between border border-transparent hover:border-[#147AFF]"
+            >
+              <div>
+                <h4 class="font-medium flex gap-[5px]">
+                  <span>Blueprint Name One</span>
+                  <button class="bg-[#313A6C] px-1 py-0.5 rounded">
+                    default
+                  </button>
+                </h4>
+                <div class="mt-3 flex items-center gap-0.5">
+                  <span
+                    class="border border-[#373E60] bg-[#CCE6FF] font-medium text-[#6C90B4] rounded w-6 h-6 flex items-center justify-center"
+                  >
+                    A
+                  </span>
+                  <span
+                    class="border border-[#373E60] bg-[#FFE2A4] font-medium text-[#C5A153] rounded w-6 h-6 flex items-center justify-center"
+                  >
+                    N
+                  </span>
+                  <span
+                    class="border border-[#373E60] bg-[#FFC4C4] font-medium text-[#CE7C7C] rounded w-6 h-6 flex items-center justify-center"
+                  >
+                    X
+                  </span>
+                  <span
+                    class="border border-[#373E60] bg-[#80B7FF] font-medium text-slate-800 rounded w-6 h-6 flex items-center justify-center"
+                  >
+                    4+
+                  </span>
+                </div>
+              </div>
+              <input type="checkbox" name="" id="" />
+            </div>
+            <!-- item 2 -->
+            <div
+              class="bg-secondary rounded-md p-4 flex items-start justify-between border border-transparent hover:border-[#147AFF]"
+            >
+              <div>
+                <h4 class="font-medium">Blueprint Name One</h4>
+                <div class="mt-3 flex items-center gap-0.5">
+                  <span
+                    class="border border-[#373E60] bg-[#CCE6FF] font-medium text-[#6C90B4] rounded w-6 h-6 flex items-center justify-center"
+                  >
+                    A
+                  </span>
+                  <span
+                    class="border border-[#373E60] bg-[#FFE2A4] font-medium text-[#C5A153] rounded w-6 h-6 flex items-center justify-center"
+                  >
+                    N
+                  </span>
+                  <span
+                    class="border border-[#373E60] bg-[#FFC4C4] font-medium text-[#CE7C7C] rounded w-6 h-6 flex items-center justify-center"
+                  >
+                    X
+                  </span>
+                  <span
+                    class="border border-[#373E60] bg-[#80B7FF] font-medium text-slate-800 rounded w-6 h-6 flex items-center justify-center"
+                  >
+                    4+
+                  </span>
+                </div>
+              </div>
+              <input type="checkbox" name="" id="" />
+            </div>
+            <!-- item 3 -->
+            <div
+              class="bg-secondary rounded-md p-4 flex items-start justify-between border border-transparent hover:border-[#147AFF]"
+            >
+              <div>
+                <h4 class="font-medium">Blueprint Name One</h4>
+                <div class="mt-3 flex items-center gap-0.5">
+                  <span
+                    class="border border-[#373E60] bg-[#CCE6FF] font-medium text-[#6C90B4] rounded w-6 h-6 flex items-center justify-center"
+                  >
+                    A
+                  </span>
+                  <span
+                    class="border border-[#373E60] bg-[#FFE2A4] font-medium text-[#C5A153] rounded w-6 h-6 flex items-center justify-center"
+                  >
+                    N
+                  </span>
+                  <span
+                    class="border border-[#373E60] bg-[#FFC4C4] font-medium text-[#CE7C7C] rounded w-6 h-6 flex items-center justify-center"
+                  >
+                    X
+                  </span>
+                  <span
+                    class="border border-[#373E60] bg-[#80B7FF] font-medium text-slate-800 rounded w-6 h-6 flex items-center justify-center"
+                  >
+                    4+
+                  </span>
+                </div>
+              </div>
+              <input type="checkbox" name="" id="" />
             </div>
           </div>
         </div>

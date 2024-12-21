@@ -2,10 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+.customize-border {
+  @apply w-full border border-input_border p-[21px] pl-[25px] bg-transparent rounded-[5px] mt-2.5;
+}
+
 body {
   font-family: "DM Sans", serif;
   background-color: #171a30;
   color: #ffffff;
   margin: 0;
   font-size: 14px;
+}
+
+select.custom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("./src/assets/arrow_frame.png");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
 }
