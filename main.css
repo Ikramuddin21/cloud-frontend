@@ -23,3 +23,23 @@ select.custom-select {
   background-position-x: 95%;
   background-position-y: 50%;
 }
+
+.custom-round {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 2px solid #313a6c;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.custom-round:checked {
+  background-image: url("./src/assets/checkmark.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+}

@@ -50,9 +50,9 @@
       </div>
     </header>
 
-    <!-- main -->
+    <!-- main section -->
     <main
-      class="mt-[80px] max-w-[1050px] w-full p-16 bg-secondary mx-auto flex items-center justify-center"
+      class="mt-[80px] max-w-[1050px] w-full p-16 rounded-[10px] bg-secondary mx-auto flex items-center justify-center"
     >
       <div class="w-full">
         <div class="flex items-center justify-center space-x-[15px]">
@@ -218,7 +218,13 @@
                   </span>
                 </div>
               </div>
-              <input type="checkbox" name="" id="" />
+              <input
+                type="checkbox"
+                name=""
+                id=""
+                class="custom-round"
+                checked
+              />
             </div>
             <!-- item 2 -->
             <div
@@ -249,7 +255,7 @@
                   </span>
                 </div>
               </div>
-              <input type="checkbox" name="" id="" />
+              <input type="checkbox" name="" id="" class="custom-round" />
             </div>
             <!-- item 3 -->
             <div
@@ -280,11 +286,37 @@
                   </span>
                 </div>
               </div>
-              <input type="checkbox" name="" id="" />
+              <input type="checkbox" name="" id="" class="custom-round" />
             </div>
           </div>
+          <!-- view all & create new -->
+          <div class="flex items-center gap-8 justify-end mt-4">
+            <button class="text-[#147AFF]">
+              View all <i class="fa-solid fa-arrow-right ml-1.5"></i>
+            </button>
+            <button
+              class="bg-[#147AFF] px-[16px] py-[11px] font-semibold rounded"
+            >
+              <i class="fa-solid fa-plus mr-1.5"></i> Create New Blueprint
+            </button>
+          </div>
         </div>
+        <!-- more advanced -->
+        <button class="text-[15px] px-5 py-2.5 rounded mt-8 bg-[#2A325C]">
+          More Advanced Settings <i class="fa-solid fa-chevron-down ml-3"></i>
+        </button>
       </div>
     </main>
+    <!-- footer -->
+    <footer
+      class="mt-[76px] max-w-[1050px] w-full mx-auto mb-[58px] px-16 pt-4 border-t border-[#1D2239] text-text_color flex items-center justify-between"
+    >
+      <p>
+        Copyright © 2024 |
+        <a href="" class="text-white">xCloud Hosting LLC.</a> All rights
+        reserved.
+      </p>
+      <span>xCloud <a href="" class="text-white">v1.2.2</a></span>
+    </footer>
   </body>
 </html>
