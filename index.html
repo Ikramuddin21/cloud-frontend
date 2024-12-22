@@ -295,6 +295,7 @@
               View all <i class="fa-solid fa-arrow-right ml-1.5"></i>
             </button>
             <button
+              id="create_new_blueprint"
               class="bg-[#147AFF] px-[16px] py-[11px] font-semibold rounded"
             >
               <i class="fa-solid fa-plus mr-1.5"></i> Create New Blueprint
@@ -308,7 +309,7 @@
       </div>
     </main>
     <!-- footer -->
-    <footer
+    <!-- <footer
       class="mt-[76px] max-w-[1050px] w-full mx-auto mb-[58px] px-16 pt-4 border-t border-[#1D2239] text-text_color flex items-center justify-between"
     >
       <p>
@@ -317,6 +318,1011 @@
         reserved.
       </p>
       <span>xCloud <a href="" class="text-white">v1.2.2</a></span>
-    </footer>
+    </footer> -->
+    <!-- modal -->
+    <div
+      id="my_modal"
+      class="inset-0 bg-primary mt-[72px] flex items-center justify-center z-50"
+    >
+      <div
+        class="bg-secondary relative max-w-[1050px] w-full mb-[90px] mx-auto rounded-[10px] shadow-lg"
+      >
+        <img
+          src="./src/assets/close.svg"
+          alt="Close icon"
+          id="close_modal"
+          class="w-8 h-8 absolute top-8 right-8 cursor-pointer"
+        />
+        <div class="p-8">
+          <h1 class="mb-[22px] text-[32px] font-medium">Create Blueprint</h1>
+          <input
+            type="text"
+            placeholder="Name your blueprint"
+            class="customize-border !p-4 !pl-[29px] text-base placeholder-icon outline-0 focus:border-[#32BA7C]"
+          />
+          <div
+            class="bg-primary rounded p-5 mt-4 flex items-center justify-between"
+          >
+            <div class="flex items-center gap-2.5">
+              <button class="text-lg font-medium px-3 text-text_color">
+                Themes
+              </button>
+              <button
+                class="text-lg font-medium px-3 selected relative after:content-[''] after:h-px after:rounded after:w-full after:absolute after:-bottom-5 after:left-0 after:bg-white"
+              >
+                Plugins
+              </button>
+              <button class="text-lg font-medium px-3 text-text_color">
+                Popular Plugins
+              </button>
+            </div>
+
+            <div class="w-[311px] relative">
+              <i
+                class="fa-solid fa-magnifying-glass text-base absolute right-4 top-2"
+              ></i>
+              <input
+                type="text"
+                placeholder="Search"
+                class="rounded-md px-4 py-2.5 w-full bg-secondary outline-0"
+              />
+            </div>
+          </div>
+
+          <!-- plugins tag -->
+          <div class="mt-[35px] flex flex-wrap items-center gap-x-1 gap-y-3">
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#FFE2A4] font-semibold text-2xl text-[#CAA452] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              B
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#FFC4C4] font-semibold text-2xl text-[#EC6F6F] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              C
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#80B7FF] font-semibold text-2xl text-[#3784E8] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              D
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#AFB6E5] font-semibold text-2xl text-[#707CCC] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              E
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#F4ACC8] font-semibold text-2xl text-[#E5699A] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              F
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#4CD9ED] font-semibold text-2xl text-[#1AA9BE] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              G
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#FFEDCD] font-semibold text-2xl text-[#EDBB63] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              H
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              I
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#FFC4C4] font-semibold text-2xl text-[#EC6F6F] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              J
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#80B7FF] font-semibold text-2xl text-[#3784E8] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              K
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#80B7FF] font-semibold text-2xl text-[#3784E8] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              L
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="./src/assets/checkmark-green.svg"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="./src/assets/close_tag.svg"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+          </div>
+
+          <!-- plugins details -->
+          <div
+            class="mt-6 h-[550px] grid grid-cols-3 gap-4 overflow-y-auto no-scrollbar"
+          >
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="./src/assets/logo-frame.png"
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                  checked
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="./src/assets/logo-frame.png"
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="./src/assets/logo-frame.png"
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                  checked
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="./src/assets/logo-frame.png"
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="./src/assets/logo-frame.png"
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                  checked
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="./src/assets/logo-frame.png"
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="./src/assets/logo-frame.png"
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                  checked
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="./src/assets/logo-frame.png"
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="./src/assets/logo-frame.png"
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                  checked
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="./src/assets/logo-frame.png"
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="./src/assets/logo-frame.png"
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                  checked
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="./src/assets/logo-frame.png"
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- next -->
+        <div
+          class="bg-[#232A4E] rounded-b flex items-center justify-end py-4 pr-[56px]"
+        >
+          <button
+            class="bg-[#147AFF] px-8 py-3 text-base font-semibold rounded"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="app.js"></script>
   </body>
 </html>
