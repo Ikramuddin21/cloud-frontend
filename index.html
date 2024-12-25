@@ -98,7 +98,7 @@
           <div class="mt-4 flex items-center gap-[30px]">
             <!-- item 1 -->
             <div
-              class="flex items-center gap-[19px] customize-border hover:border-[#147AFF] cursor-pointer"
+              class="server_type_selected flex items-center gap-[19px] customize-border !border-[#147AFF] hover:border-[#147AFF] cursor-pointer"
             >
               <img
                 src="./src/assets/cloud-storage.png"
@@ -116,7 +116,7 @@
             </div>
             <!-- item 2 -->
             <div
-              class="flex items-center gap-[19px] customize-border hover:border-[#147AFF] cursor-pointer"
+              class="server_type_selected flex items-center gap-[19px] customize-border hover:border-[#147AFF] cursor-pointer"
             >
               <img
                 src="./src/assets/staging-evn.png"
@@ -135,30 +135,6 @@
           </div>
         </div>
         <!-- blueprints -->
-        <div
-          class="mt-8 bg-primary p-6 rounded flex justify-between items-start"
-        >
-          <div>
-            <h1 class="text-2xl">Blueprints</h1>
-            <p class="text-text_color mt-3">
-              Add the following record to the DNS for your domain to get free
-            </p>
-          </div>
-          <label for="toggle" class="flex items-center cursor-pointer">
-            <input type="checkbox" id="toggle" class="sr-only peer" />
-
-            <!-- outer -->
-            <div
-              class="w-[42px] h-6 bg-[#EEF2F7] rounded-full peer-checked:bg-[#32BA7C] transition duration-300"
-            ></div>
-
-            <!-- inner -->
-            <div
-              class="w-4 h-4 bg-[#9DA2AE] rounded-full absolute translate-x-1 peer-checked:translate-x-6 peer-checked:bg-white transition duration-300 shadow-md"
-            ></div>
-          </label>
-        </div>
-        <!-- blueprints checked -->
         <div class="mt-8 bg-primary p-6 rounded">
           <div class="flex justify-between items-start">
             <div>
@@ -183,123 +159,137 @@
             </label>
           </div>
           <!-- blueprints name -->
-          <div class="mt-4 grid grid-cols-3 gap-4">
-            <!-- item 1 -->
-            <div
-              class="bg-secondary rounded-md p-4 flex items-start justify-between border border-transparent hover:border-[#147AFF]"
-            >
-              <div>
-                <h4 class="font-medium flex gap-[5px]">
-                  <span>Blueprint Name One</span>
-                  <button class="bg-[#313A6C] px-1 py-0.5 rounded">
-                    default
-                  </button>
-                </h4>
-                <div class="mt-3 flex items-center gap-0.5">
-                  <span
-                    class="border border-[#373E60] bg-[#CCE6FF] font-medium text-[#6C90B4] rounded w-6 h-6 flex items-center justify-center"
-                  >
-                    A
-                  </span>
-                  <span
-                    class="border border-[#373E60] bg-[#FFE2A4] font-medium text-[#C5A153] rounded w-6 h-6 flex items-center justify-center"
-                  >
-                    N
-                  </span>
-                  <span
-                    class="border border-[#373E60] bg-[#FFC4C4] font-medium text-[#CE7C7C] rounded w-6 h-6 flex items-center justify-center"
-                  >
-                    X
-                  </span>
-                  <span
-                    class="border border-[#373E60] bg-[#80B7FF] font-medium text-slate-800 rounded w-6 h-6 flex items-center justify-center"
-                  >
-                    4+
-                  </span>
+          <div id="blueprint_checked" class="hidden mt-4">
+            <div class="grid grid-cols-3 gap-4">
+              <!-- item 1 -->
+              <div
+                class="blueprint_name cursor-pointer bg-secondary rounded-md p-4 flex items-start justify-between border border-transparent border-[#147AFF] hover:border-[#147AFF]"
+              >
+                <div>
+                  <h4 class="font-medium flex gap-[5px]">
+                    <span>Blueprint Name One</span>
+                    <button class="bg-[#313A6C] px-1 py-0.5 rounded">
+                      default
+                    </button>
+                  </h4>
+                  <div class="mt-3 flex items-center gap-0.5">
+                    <span
+                      class="border border-[#373E60] bg-[#CCE6FF] font-medium text-[#6C90B4] rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      A
+                    </span>
+                    <span
+                      class="border border-[#373E60] bg-[#FFE2A4] font-medium text-[#C5A153] rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      N
+                    </span>
+                    <span
+                      class="border border-[#373E60] bg-[#FFC4C4] font-medium text-[#CE7C7C] rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      X
+                    </span>
+                    <span
+                      class="border border-[#373E60] bg-[#80B7FF] font-medium text-slate-800 rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      4+
+                    </span>
+                  </div>
                 </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round blueprint_input"
+                  checked
+                />
               </div>
-              <input
-                type="checkbox"
-                name=""
-                id=""
-                class="custom-round"
-                checked
-              />
-            </div>
-            <!-- item 2 -->
-            <div
-              class="bg-secondary rounded-md p-4 flex items-start justify-between border border-transparent hover:border-[#147AFF]"
-            >
-              <div>
-                <h4 class="font-medium">Blueprint Name One</h4>
-                <div class="mt-3 flex items-center gap-0.5">
-                  <span
-                    class="border border-[#373E60] bg-[#CCE6FF] font-medium text-[#6C90B4] rounded w-6 h-6 flex items-center justify-center"
-                  >
-                    A
-                  </span>
-                  <span
-                    class="border border-[#373E60] bg-[#FFE2A4] font-medium text-[#C5A153] rounded w-6 h-6 flex items-center justify-center"
-                  >
-                    N
-                  </span>
-                  <span
-                    class="border border-[#373E60] bg-[#FFC4C4] font-medium text-[#CE7C7C] rounded w-6 h-6 flex items-center justify-center"
-                  >
-                    X
-                  </span>
-                  <span
-                    class="border border-[#373E60] bg-[#80B7FF] font-medium text-slate-800 rounded w-6 h-6 flex items-center justify-center"
-                  >
-                    4+
-                  </span>
+              <!-- item 2 -->
+              <div
+                class="blueprint_name cursor-pointer bg-secondary rounded-md p-4 flex items-start justify-between border border-transparent hover:border-[#147AFF]"
+              >
+                <div>
+                  <h4 class="font-medium">Blueprint Name One</h4>
+                  <div class="mt-3 flex items-center gap-0.5">
+                    <span
+                      class="border border-[#373E60] bg-[#CCE6FF] font-medium text-[#6C90B4] rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      A
+                    </span>
+                    <span
+                      class="border border-[#373E60] bg-[#FFE2A4] font-medium text-[#C5A153] rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      N
+                    </span>
+                    <span
+                      class="border border-[#373E60] bg-[#FFC4C4] font-medium text-[#CE7C7C] rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      X
+                    </span>
+                    <span
+                      class="border border-[#373E60] bg-[#80B7FF] font-medium text-slate-800 rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      4+
+                    </span>
+                  </div>
                 </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round blueprint_input"
+                />
               </div>
-              <input type="checkbox" name="" id="" class="custom-round" />
-            </div>
-            <!-- item 3 -->
-            <div
-              class="bg-secondary rounded-md p-4 flex items-start justify-between border border-transparent hover:border-[#147AFF]"
-            >
-              <div>
-                <h4 class="font-medium">Blueprint Name One</h4>
-                <div class="mt-3 flex items-center gap-0.5">
-                  <span
-                    class="border border-[#373E60] bg-[#CCE6FF] font-medium text-[#6C90B4] rounded w-6 h-6 flex items-center justify-center"
-                  >
-                    A
-                  </span>
-                  <span
-                    class="border border-[#373E60] bg-[#FFE2A4] font-medium text-[#C5A153] rounded w-6 h-6 flex items-center justify-center"
-                  >
-                    N
-                  </span>
-                  <span
-                    class="border border-[#373E60] bg-[#FFC4C4] font-medium text-[#CE7C7C] rounded w-6 h-6 flex items-center justify-center"
-                  >
-                    X
-                  </span>
-                  <span
-                    class="border border-[#373E60] bg-[#80B7FF] font-medium text-slate-800 rounded w-6 h-6 flex items-center justify-center"
-                  >
-                    4+
-                  </span>
+              <!-- item 3 -->
+              <div
+                class="blueprint_name cursor-pointer bg-secondary rounded-md p-4 flex items-start justify-between border border-transparent hover:border-[#147AFF]"
+              >
+                <div>
+                  <h4 class="font-medium">Blueprint Name One</h4>
+                  <div class="mt-3 flex items-center gap-0.5">
+                    <span
+                      class="border border-[#373E60] bg-[#CCE6FF] font-medium text-[#6C90B4] rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      A
+                    </span>
+                    <span
+                      class="border border-[#373E60] bg-[#FFE2A4] font-medium text-[#C5A153] rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      N
+                    </span>
+                    <span
+                      class="border border-[#373E60] bg-[#FFC4C4] font-medium text-[#CE7C7C] rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      X
+                    </span>
+                    <span
+                      class="border border-[#373E60] bg-[#80B7FF] font-medium text-slate-800 rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      4+
+                    </span>
+                  </div>
                 </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round blueprint_input"
+                />
               </div>
-              <input type="checkbox" name="" id="" class="custom-round" />
             </div>
-          </div>
-          <!-- view all & create new -->
-          <div class="flex items-center gap-8 justify-end mt-4">
-            <button class="text-[#147AFF]">
-              View all <i class="fa-solid fa-arrow-right ml-1.5"></i>
-            </button>
-            <button
-              id="create_new_blueprint"
-              class="bg-[#147AFF] px-[16px] py-[11px] font-semibold rounded"
-            >
-              <i class="fa-solid fa-plus mr-1.5"></i> Create New Blueprint
-            </button>
+            <!-- view all & create new -->
+            <div class="flex items-center gap-8 justify-end mt-4">
+              <a href="./src/pages/view.html">
+                <button class="text-[#147AFF]">
+                  View all <i class="fa-solid fa-arrow-right ml-1.5"></i>
+                </button>
+              </a>
+              <button
+                id="create_new_blueprint"
+                class="bg-[#147AFF] px-[16px] py-[11px] font-semibold rounded"
+              >
+                <i class="fa-solid fa-plus mr-1.5"></i> Create New Blueprint
+              </button>
+            </div>
           </div>
         </div>
         <!-- more advanced -->
@@ -309,7 +299,7 @@
       </div>
     </main>
     <!-- footer -->
-    <!-- <footer
+    <footer
       class="mt-[76px] max-w-[1050px] w-full mx-auto mb-[58px] px-16 pt-4 border-t border-[#1D2239] text-text_color flex items-center justify-between"
     >
       <p>
@@ -318,15 +308,16 @@
         reserved.
       </p>
       <span>xCloud <a href="" class="text-white">v1.2.2</a></span>
-    </footer> -->
+    </footer>
     <!-- modal -->
     <div
       id="my_modal"
-      class="inset-0 bg-primary mt-[72px] flex items-center justify-center z-50"
+      class="sticky inset-0 bg-primary mt-[72px] flex items-center justify-center z-50 hidden"
     >
       <div
         class="bg-secondary relative max-w-[1050px] w-full mb-[90px] mx-auto rounded-[10px] shadow-lg"
       >
+        <!-- modal close -->
         <img
           src="./src/assets/close.svg"
           alt="Close icon"
