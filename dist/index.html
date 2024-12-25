@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X Cloud</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <script type="module" crossorigin src="/assets/index-QLj3B7tP.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CdtflyPD.css">
+  </head>
+  <body>
+    <!-- header -->
+    <header
+      class="h-[100px] max-w-[1650px] w-full px-8 bg-secondary flex items-center justify-between"
+    >
+      <div>
+        <img src="data:image/png;base64,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" alt="Logo" />
+      </div>
+
+      <div class="flex items-center space-x-10">
+        <div>
+          <span
+            class="relative after:content-[''] after:h-[3px] after:bg-[#2DC774] after:w-1.5 after:rounded after:absolute after:-top-3"
+            ><i class="fa-regular fa-bell text-white text-xl"></i
+          ></span>
+        </div>
+        <div
+          class="border border-primary rounded-[10px] pl-1 pr-3 py-1 flex items-center gap-[10px]"
+          role="button"
+        >
+          <img
+            src="data:image/png;base64,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"
+            class="w-10 h-10 rounded-full"
+            alt=""
+          />
+          <h5 class="text-[15px] font-medium">Mark Adam</h5>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAERSURBVHgB1ZS7agJBFIb/OXaawHZZso22cYu1CL5LwCJtSCCBhGyTqw/gI/gK+ga2auH6BFqKNtsv7niOsILXdWUQ/IqBOTPnYwYOvwJj215RKzQ1wVMaFrKi0eK+t8kkGCuRxTkMThKtE6oYFYoJDQMywZJfqptbT8McIcEslmkhzicsu+7epju3nE2YL+Tx7n/i6eV560xqH77Pdwo7hbmra/t3sxhFEYaDAA+1GhzHQb/XW8nuq1X8fX1jNp3uFB4cm2KphJ/6P/rd7nKfyMaj0b4WpM5hIhXSZEcJE6mQJjtamIULGGxOiBAGIc6wAKbQaBNn4aOJV2oJWI1XktimOSpca+EERMRLhzitxbUAG9lfNxJ0UGUAAAAASUVORK5CYII=" class="w-4 h-4" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main
+      class="mt-[80px] max-w-[1050px] w-full p-16 rounded-[10px] bg-secondary mx-auto flex items-center justify-center"
+    >
+      <div class="w-full">
+        <div class="flex items-center justify-center space-x-[15px]">
+          <h1 class="text-[40px]">Set Up Your Server With</h1>
+          <img src="data:image/png;base64,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" alt="" />
+        </div>
+        <p class="text-text_color text-center text-[15px] mt-[15px]">
+          Fill in the details below to get your server set up with xCloud
+        </p>
+        <!-- server details -->
+        <div class="mt-[48px]">
+          <h3 class="text-lg font-medium">Server Details</h3>
+          <div class="mt-4 flex items-center gap-[30px]">
+            <div class="w-full">
+              <label for="server_name" class="text-[#74778E]"
+                >Server Name</label
+              >
+              <input
+                type="text"
+                id="server_name"
+                class="customize-border text-text_color outline-0 focus:border-[#147AFF]"
+                placeholder="Example Site"
+              />
+            </div>
+            <div class="w-full">
+              <label for="tag" class="text-[#74778E]">Add Tag (Optional)</label>
+              <select
+                name="tag"
+                id="tag"
+                class="custom-select customize-border text-text_color outline-0 focus:border-[#147AFF]"
+              >
+                <option value="" selected>Select or create tags</option>
+                <option value="tag1">Tag1</option>
+                <option value="tag2">Tag2</option>
+                <option value="tag3">Tag2</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- server type -->
+        <div class="mt-8">
+          <h3 class="text-lg font-medium">Server Type</h3>
+          <div class="mt-4 flex items-center gap-[30px]">
+            <!-- item 1 -->
+            <div
+              class="server_type_selected flex items-center gap-[19px] customize-border !border-[#147AFF] hover:border-[#147AFF] cursor-pointer"
+            >
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAknSURBVHgB3Vl7TFTZGf/dufNgYIbhzSAqF1x8rFppddVdfAzZtLZJH5BuG5umEZp0/3IV0jRpto1K0pjd/YchpmmzyQb2j27U7nYw1bVVXAYrotZdwF0eAjojKvIauDPMC+Zxes5FWBiG18xg0v0lk7n3nHPnfr/v/M73fecM8H8ODjHC703EwAMFkCGHBNF2uoSrxQtA1ATKTSRJw6OGEBSHdFkDQRS9U8JZsYqIigD1usDL0EAvhYXGUBK19KtytYhETGAx44NBQBwPSh92DY4aH/RXnzsWZ0SMIUOE4KlsEMb4iUng8YAfo/bnxjMQIoDjqw6f8RkQY0RE4G0TKQWBIbSdGf90yA+fP/xzvJw7ghgjIgn94QKxIMT7fv/ixjOo4zhkZ/AxXdwrngHJ+2GkM2gLLGr8NKisBJeHWH79gb/mcJVHQJRYMQEZh5+EtjlcBJ4JsuSzPh+Btd+PIUrW5SalRKFoKK4iSYgC8uUMYrE+Xo7jCKKU3s574Zg9IIZrD4U/ENJAF7eC97H8UYsIsSSBmXAZnJJNqJ/ZwqXSidiLHItQUWBRAkslKo+XSPKJBoSLbjEvSoDncBJhjGcRhy3a5eiegfi9CIgPIE/bOv8dgYAZUWDBMCoVZ1Pen4PpWD+TpJbA5OPr8D+pl0jIM3eBzy6CPCF9urv13FuKbyMKLBiFaKY9GdrGPD8wsnzjGcaHOuC0D8DtduCg/g60vq6ZviAh1YgSfLjGUzTqBDn8NbR9eCy4pGyIdwwTHR8iYGsHr81B/Pr9IHItMrOz8WaRCmX7RpCudsLm1dS+/2ZSJaLEPAlJC5fVOSGlAvM+i+FLYbj+OOJVKuladNiRfqASSq1+pr9Q04TSXe2iVk0auZeOFiNKzJEQzbIFchlawtU5NvvCuvEP3pU8z6B+qQQO9wQS5DZ8+t52HC/soh4fnxpIIN50FlYq7A8v0DfrEAPMzADzPDOehElITPOswgwtFQIeGya6z4E4rNK9TP8q1PklU30TThxIbcMb+Z8jMU2L8927zVcebCo7W6G2em78tjZuTW4Ol3e0CFFiZgZYxAln/LgzKEknXJ1D6N7RPnAfXo8TGzJ9+MWO7hlv8yoNmpyFqGg5Zg543NayLf9pZMYjxpAI/NFEmBaF0E7HeFAcHA3OiTq+R1fhbj5BPX+ekpYj61A1lPk/Q2r+93Fwkxpnij6SvM7kQtNsBQ2TRQlyjxWrhKlExmFenc4W7dBYcM6MeB7fgPu+CXFqDRyWzxA31gXtnhPQ5hahnfZXtBxCYU8Tjr7WjDfy7lRwG4/VYpUhe07AENoxNCoVaHOgXrcPqo0/x7Ao4vSvUnCpMlPy9swiBcw3xT25AZcdLwoSgVDtM++7veHLXI1ggPCj91E1dBpnrm/DK5kWnNj7T+RphkqYXCLVucUyJiACSARoKJrjbYdream2abxQPN+SU81m4PShyy1YCQgE0lkl/KXGJNxp6Wmwu+yWL+49tJguNZWu5GckAnSRzknprN5ZBqonAvLc33Bvr/ikgVeqjIHxUfh4dYMmQVXT2NRiuGq+g2vX7wo9D/urTJc7heX+lrSI6SnaKRqJQGTz658wMPN+UvFRhbKV3dTUGJa3F+C+lqly9+nWWzdvVafp1lUZ9icIISOTBkaclkvXOmsnJ1FZ8oMtVixFgOFPlARNZrW0ODqlUuKIyxMyknBWjiNlZ99SmLFCBFxjIh+vPUIsfx4zD3yvMS1Ve1KboKLVLgdL3zAGhkUEAgRKBY8ENY+tmwWk6NSlwzan4eK1juofvv6ycUkCDM9PCkrL/zZppNNhonFcYPGc41DtDfDGugpORARQ7X2vZPzuO8YHwd2n9Bk6aOKVM336zCSkp+kk4z1eHz25UEjt7D5brxNSkuOrrtzoPu6dmKz88evbahclMA3jLyV55LINd6RG0yy3g32ZTC1JeiHl+JcERxQqHqmzjGdQqxQz18zoULD+LRsyhFG7p6ahufegKPoqCzbrxdzcZHFBAtOI1PjJwb5KuS7tiK3zbPFTTo9knVpAlKCSwuSkv9Tl8ZX66f6ub8Beu16vq4j4aHEenBPJ05dX8Lvae+7viuOJh4RYGB+KcZc76crVG+XselnHKkuAzZIVPDE5Oj+ovD5QuCMzVVOekqZBLGEbFdH2ZS/0Wdn4+EI9RHEq20dNILnMLPZ3vVvnDKD84XA83QgR6NNjZ7zb40VTcwtGRl3IyRXQ3duL3t4HcLvcUn/UBK7f7igO6NaUD/eL8Ac9tAzxIVp03rdQDzvg8XjQ1dOH7d/agRSZGpcv/xsjwyNzxkZN4B8X65O08Vps2/oyEjSJCNJ4bu17BmF9FiIBk4nlyTBUShW02hRs3Z6E1rY2dLR3zh1IpqoHHlEiIFMVDA30F8t4ObLXroNCoUB7Rw/s4hjWrdWv6LeYXIaGHUhNy4BKFYev2r+CuaERgwODmGW4mcq07OLHRunQIer/yF4xFJd6neM1PCWwfccu7DtgoMkpS9KpQubHgX07kZqydLXRfLsVvZZnWJ8jYMRmQ2tr2xy50IrZGgSpuHzeWDf7uahnYK2wWZBxssNsW9n/9BHutbXARRdY/saNWLtOwGeNt2GjBiXptIhXx817vrvHinpayAWhgi45Gf+9exdffN5Cz5Hc00NolCPvuiZRVv+JsTX0+Zj8zbrXUCxw4BvcHocgk/FQKtXQaDTY8+p+fGfnbvhoVWZ5+IAlNDobM+kCjx730xNrHkJeruTx7vvd9Ah+dhAgdf5JVPyrzmhd6N0x+5/4OZFSQjjpPNVhH4FcrkR6RhaKf3oYKcmpSExQUmLx0tieXivi4hNhGxvFreZbM2FRMpuglZ5aV1Cdm5d6Z0wJzCJyKhAInnQ57dLJRZw6Adu276RRKgmb8gU6Iz5YnwxKMgkJiyLhSOWlc8Zl7zGiXgPh8MTaZV6ft+VDhVKdLJPJCrwel7Q+hgef0VxBDwcmCfoe9c3WuRQWnT5ScvWTpb0+G6syA7PxmqG4IEA4k9frFBiRRF0aMrM2fD2AhkUWXT79+/wFuhysOoFpsPXBZMVxnJChz5PCIheU4rkZUeCFEWBg0YoEUJy2RoBrArXmOmNke41vEv4H/gsQQwyF57MAAAAASUVORK5CYII="
+                alt="Cloud Image"
+                class="w-[46px]"
+              />
+
+              <div>
+                <h4 class="text-xl font-medium">Go Live</h4>
+                <p class="text-text_color mt-2">
+                  Get your site up and running for the world to see by simply
+                  pointing your domain to the server.
+                </p>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div
+              class="server_type_selected flex items-center gap-[19px] customize-border hover:border-[#147AFF] cursor-pointer"
+            >
+              <img
+                src="data:image/png;base64,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"
+                alt="Cloud Image"
+                class="w-[46px]"
+              />
+
+              <div>
+                <h4 class="text-xl font-medium">Staging Environment</h4>
+                <p class="text-text_color mt-2">
+                  Create your site in a staging environment and refine it until
+                  it’s ready for launch.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- blueprints -->
+        <div class="mt-8 bg-primary p-6 rounded">
+          <div class="flex justify-between items-start">
+            <div>
+              <h1 class="text-2xl">Blueprints</h1>
+              <p class="text-text_color mt-3">
+                Add the following record to the DNS for your domain to get free
+              </p>
+            </div>
+            <!-- toggle switch button -->
+            <label for="toggle" class="flex items-center cursor-pointer">
+              <input type="checkbox" id="toggle" class="sr-only peer" />
+
+              <!-- outer -->
+              <div
+                class="w-[42px] h-6 bg-[#EEF2F7] rounded-full peer-checked:bg-[#32BA7C] transition duration-300"
+              ></div>
+
+              <!-- inner -->
+              <div
+                class="w-4 h-4 bg-[#9DA2AE] rounded-full absolute translate-x-1 peer-checked:translate-x-6 peer-checked:bg-white transition duration-300 shadow-md"
+              ></div>
+            </label>
+          </div>
+          <!-- blueprints name -->
+          <div id="blueprint_checked" class="hidden mt-4">
+            <div class="grid grid-cols-3 gap-4">
+              <!-- item 1 -->
+              <div
+                class="blueprint_name cursor-pointer bg-secondary rounded-md p-4 flex items-start justify-between border border-transparent border-[#147AFF] hover:border-[#147AFF]"
+              >
+                <div>
+                  <h4 class="font-medium flex gap-[5px]">
+                    <span>Blueprint Name One</span>
+                    <button class="bg-[#313A6C] px-1 py-0.5 rounded">
+                      default
+                    </button>
+                  </h4>
+                  <div class="mt-3 flex items-center gap-0.5">
+                    <span
+                      class="border border-[#373E60] bg-[#CCE6FF] font-medium text-[#6C90B4] rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      A
+                    </span>
+                    <span
+                      class="border border-[#373E60] bg-[#FFE2A4] font-medium text-[#C5A153] rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      N
+                    </span>
+                    <span
+                      class="border border-[#373E60] bg-[#FFC4C4] font-medium text-[#CE7C7C] rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      X
+                    </span>
+                    <span
+                      class="border border-[#373E60] bg-[#80B7FF] font-medium text-slate-800 rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      4+
+                    </span>
+                  </div>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round blueprint_input"
+                  checked
+                />
+              </div>
+              <!-- item 2 -->
+              <div
+                class="blueprint_name cursor-pointer bg-secondary rounded-md p-4 flex items-start justify-between border border-transparent hover:border-[#147AFF]"
+              >
+                <div>
+                  <h4 class="font-medium">Blueprint Name One</h4>
+                  <div class="mt-3 flex items-center gap-0.5">
+                    <span
+                      class="border border-[#373E60] bg-[#CCE6FF] font-medium text-[#6C90B4] rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      A
+                    </span>
+                    <span
+                      class="border border-[#373E60] bg-[#FFE2A4] font-medium text-[#C5A153] rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      N
+                    </span>
+                    <span
+                      class="border border-[#373E60] bg-[#FFC4C4] font-medium text-[#CE7C7C] rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      X
+                    </span>
+                    <span
+                      class="border border-[#373E60] bg-[#80B7FF] font-medium text-slate-800 rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      4+
+                    </span>
+                  </div>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round blueprint_input"
+                />
+              </div>
+              <!-- item 3 -->
+              <div
+                class="blueprint_name cursor-pointer bg-secondary rounded-md p-4 flex items-start justify-between border border-transparent hover:border-[#147AFF]"
+              >
+                <div>
+                  <h4 class="font-medium">Blueprint Name One</h4>
+                  <div class="mt-3 flex items-center gap-0.5">
+                    <span
+                      class="border border-[#373E60] bg-[#CCE6FF] font-medium text-[#6C90B4] rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      A
+                    </span>
+                    <span
+                      class="border border-[#373E60] bg-[#FFE2A4] font-medium text-[#C5A153] rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      N
+                    </span>
+                    <span
+                      class="border border-[#373E60] bg-[#FFC4C4] font-medium text-[#CE7C7C] rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      X
+                    </span>
+                    <span
+                      class="border border-[#373E60] bg-[#80B7FF] font-medium text-slate-800 rounded w-6 h-6 flex items-center justify-center"
+                    >
+                      4+
+                    </span>
+                  </div>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round blueprint_input"
+                />
+              </div>
+            </div>
+            <!-- view all & create new -->
+            <div class="flex items-center gap-8 justify-end mt-4">
+              <a href="./src/pages/view.html">
+                <button class="text-[#147AFF]">
+                  View all <i class="fa-solid fa-arrow-right ml-1.5"></i>
+                </button>
+              </a>
+              <button
+                id="create_new_blueprint"
+                class="bg-[#147AFF] px-[16px] py-[11px] font-semibold rounded"
+              >
+                <i class="fa-solid fa-plus mr-1.5"></i> Create New Blueprint
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- more advanced -->
+        <button class="text-[15px] px-5 py-2.5 rounded mt-8 bg-[#2A325C]">
+          More Advanced Settings <i class="fa-solid fa-chevron-down ml-3"></i>
+        </button>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer
+      class="mt-[76px] max-w-[1050px] w-full mx-auto mb-[58px] px-16 pt-4 border-t border-[#1D2239] text-text_color flex items-center justify-between"
+    >
+      <p>
+        Copyright © 2024 |
+        <a href="" class="text-white">xCloud Hosting LLC.</a> All rights
+        reserved.
+      </p>
+      <span>xCloud <a href="" class="text-white">v1.2.2</a></span>
+    </footer>
+    <!-- modal -->
+    <div
+      id="my_modal"
+      class="sticky inset-0 bg-primary mt-[72px] flex items-center justify-center z-50 hidden"
+    >
+      <div
+        class="bg-secondary relative max-w-[1050px] w-full mb-[90px] mx-auto rounded-[10px] shadow-lg"
+      >
+        <!-- modal close -->
+        <img
+          src="data:image/svg+xml,%3csvg%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_411_7013)'%3e%3cpath%20d='M13.3359%2013.332L18.6693%2018.6654M18.6693%2013.332L13.3359%2018.6654'%20stroke='%23919DB9'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M16%204C25.6%204%2028%206.4%2028%2016C28%2025.6%2025.6%2028%2016%2028C6.4%2028%204%2025.6%204%2016C4%206.4%206.4%204%2016%204Z'%20stroke='%23919DB9'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7013'%3e%3crect%20width='32'%20height='32'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+          alt="Close icon"
+          id="close_modal"
+          class="w-8 h-8 absolute top-8 right-8 cursor-pointer"
+        />
+        <div class="p-8">
+          <h1 class="mb-[22px] text-[32px] font-medium">Create Blueprint</h1>
+          <input
+            type="text"
+            placeholder="Name your blueprint"
+            class="customize-border !p-4 !pl-[29px] text-base placeholder-icon outline-0 focus:border-[#32BA7C]"
+          />
+          <div
+            class="bg-primary rounded p-5 mt-4 flex items-center justify-between"
+          >
+            <div class="flex items-center gap-2.5">
+              <button class="text-lg font-medium px-3 text-text_color">
+                Themes
+              </button>
+              <button
+                class="text-lg font-medium px-3 selected relative after:content-[''] after:h-px after:rounded after:w-full after:absolute after:-bottom-5 after:left-0 after:bg-white"
+              >
+                Plugins
+              </button>
+              <button class="text-lg font-medium px-3 text-text_color">
+                Popular Plugins
+              </button>
+            </div>
+
+            <div class="w-[311px] relative">
+              <i
+                class="fa-solid fa-magnifying-glass text-base absolute right-4 top-2"
+              ></i>
+              <input
+                type="text"
+                placeholder="Search"
+                class="rounded-md px-4 py-2.5 w-full bg-secondary outline-0"
+              />
+            </div>
+          </div>
+
+          <!-- plugins tag -->
+          <div class="mt-[35px] flex flex-wrap items-center gap-x-1 gap-y-3">
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#FFE2A4] font-semibold text-2xl text-[#CAA452] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              B
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#FFC4C4] font-semibold text-2xl text-[#EC6F6F] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              C
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#80B7FF] font-semibold text-2xl text-[#3784E8] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              D
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#AFB6E5] font-semibold text-2xl text-[#707CCC] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              E
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#F4ACC8] font-semibold text-2xl text-[#E5699A] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              F
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#4CD9ED] font-semibold text-2xl text-[#1AA9BE] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              G
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#FFEDCD] font-semibold text-2xl text-[#EDBB63] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              H
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              I
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#FFC4C4] font-semibold text-2xl text-[#EC6F6F] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              J
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#80B7FF] font-semibold text-2xl text-[#3784E8] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              K
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#80B7FF] font-semibold text-2xl text-[#3784E8] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              L
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+            <span
+              class="group relative hover:-mt-3 duration-300 border border-secondary bg-[#CCE6FF] font-semibold text-2xl text-[#6C90B4] rounded-lg w-12 h-12 flex items-center justify-center relative"
+            >
+              A
+              <button
+                class="bg-[#232A4E] text-white text-xs w-[100px] px-3 py-1.5 rounded hidden group-hover:block absolute -top-10"
+              >
+                Plugin Name
+              </button>
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%232DC774'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_7056)'%3e%3cpath%20d='M4.5%208L7%2010.5L12%205.5'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_7056'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 group-hover:hidden -right-1 -top-0.5"
+              />
+              <img
+                src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20fill='%23E9F4FF'/%3e%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='7.5'%20stroke='%231D2239'/%3e%3cg%20clip-path='url(%23clip0_411_8204)'%3e%3cpath%20d='M11%205L5%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5%205L11%2011'%20stroke='%23FC573B'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_411_8204'%3e%3crect%20width='12'%20height='12'%20fill='white'%20transform='translate(2%202)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                alt=""
+                class="absolute duration-300 hidden group-hover:block -right-1 -top-0.5"
+              />
+            </span>
+          </div>
+
+          <!-- plugins details -->
+          <div
+            class="mt-6 h-[550px] grid grid-cols-3 gap-4 overflow-y-auto no-scrollbar"
+          >
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARNSURBVHgB7VpNaBRnGH6/b2Z2W4w2ISBKDUyl6iXQxku3UIvppSAUc6o9t8cWlJ6EFkygh/amUOjJQ+klLRTqoR79i0i8mCCC+AMZJWJQ0MVETHZ25/N93mQ234xRM7O7SQbywGRm8n0787zf+7w/szuKUtjlVw4qrQ7z4RBvPm0AGKMmlaLJMIpGZoLxwB5T8UG3f7B7m144YYiO0cbGydmoPFINLlRxIgaAfJeqnVfKfEwFADwyZ0qDMELjH1j5opAHwHUrc5bjHX7F97SaogLCRGZQe5pOUFGh1ZA2pAojnTQ4gA9r/lNYAxi+poJj04D1RuENcGkNEG3fT/V9X1PUvYfMlp2kwllST++SM/U/uVNnqRWovt2fGuoQQLw2cJRMz57XzlHPH1L53A+yz4OOSQgrvvDF728kD8AjMo/3edCSB4y3laJdBxZPanOkq3dkJcP+76jO24o3ZPlgLpW65PMx9KMJ9sT3lBW5YgA3rvd/S43dhxIkYiLR9oFXPuM8GCP31qiMN6/Dq465MBh7bPb4apDLA/Nf/vlWaTRvwB4pXf1FghayanxwqCkXkEUgO7yHjHCOuVmQ2QNCIEVeZPF8hlRtVsZir8QBarbsEPKaz/WN02RYPlH3XrkWVt3c/pvKl4/Twme/UlZkNiDcdyRx7jEh59Y/i0ZYRkIWLo8RG6VY894K0jA8jpWv7z3CHrqTWT5AZgm9+OZK89i7dopcXr2VYLwuNmqO3gbIaf6rf4W8e3uUnOkxyoLMHsBKxxKJyUM29fc/X57DUkkXKBANrcyEOfAe9vrRNTIsqazkcxmg+SaQiJBaWmW4P+KChcKVuPiSETDYzvWLsXGalo2ZEQPyIHMhk1Vb0nvdiofS2PFENQ0/+bmZTsPKT4lChYC15yLI9YNLlAeZDbBLf4ODr7mq7Am7JcAeqROyaVjyQtzAY8vkd4oEsTB54LzX0zdMGaHmn0hhMu/2SsXFsUiJN+fxBDV6+6l88UeqfziUqMgg6d78K3EteLF0/Q9Sz+5RHrTczEk15S7TSUmgjlTKMorhcqr1Jk5Su9FyOw2pOKlOEpKwyUMynSAPtL0ble7SqqgSMxy08jywyvYjC9pqQLo1jgO+wR1rOHCMamxY3rb5dWibAZLrLYJItXG6BHmZExvI9aNdaJsBkustidjp0u4wYUTtwG/ULuRKo2lILn+nV/qZxRb5bKKVkAcdomalFi9xR+o8vEqtoqPPxGmE3G7Y1ftNzeBqsaZfq3gTTJgfYGKE+48mqnQerPn3Qi5io7rcSqBetJKZ1lRCncDmV4vrjU0D1htsgAmooDCGJvEb2RkqKJRSk5oi8x8VFE4UjTjPqtPBtp6+Hu5VKlQgcPE6dX9qfFSC2I3Kw4r1RAUBXjUAZxyLAQHeOTDlQVhFGxzg6JrSYGC/7GHD9yt+Q9EwB/dHSm2Y35ADJn4G8TodjF+wB14CukPtMCt7igsAAAAASUVORK5CYII="
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                  checked
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARNSURBVHgB7VpNaBRnGH6/b2Z2W4w2ISBKDUyl6iXQxku3UIvppSAUc6o9t8cWlJ6EFkygh/amUOjJQ+klLRTqoR79i0i8mCCC+AMZJWJQ0MVETHZ25/N93mQ234xRM7O7SQbywGRm8n0787zf+7w/szuKUtjlVw4qrQ7z4RBvPm0AGKMmlaLJMIpGZoLxwB5T8UG3f7B7m144YYiO0cbGydmoPFINLlRxIgaAfJeqnVfKfEwFADwyZ0qDMELjH1j5opAHwHUrc5bjHX7F97SaogLCRGZQe5pOUFGh1ZA2pAojnTQ4gA9r/lNYAxi+poJj04D1RuENcGkNEG3fT/V9X1PUvYfMlp2kwllST++SM/U/uVNnqRWovt2fGuoQQLw2cJRMz57XzlHPH1L53A+yz4OOSQgrvvDF728kD8AjMo/3edCSB4y3laJdBxZPanOkq3dkJcP+76jO24o3ZPlgLpW65PMx9KMJ9sT3lBW5YgA3rvd/S43dhxIkYiLR9oFXPuM8GCP31qiMN6/Dq465MBh7bPb4apDLA/Nf/vlWaTRvwB4pXf1FghayanxwqCkXkEUgO7yHjHCOuVmQ2QNCIEVeZPF8hlRtVsZir8QBarbsEPKaz/WN02RYPlH3XrkWVt3c/pvKl4/Twme/UlZkNiDcdyRx7jEh59Y/i0ZYRkIWLo8RG6VY894K0jA8jpWv7z3CHrqTWT5AZgm9+OZK89i7dopcXr2VYLwuNmqO3gbIaf6rf4W8e3uUnOkxyoLMHsBKxxKJyUM29fc/X57DUkkXKBANrcyEOfAe9vrRNTIsqazkcxmg+SaQiJBaWmW4P+KChcKVuPiSETDYzvWLsXGalo2ZEQPyIHMhk1Vb0nvdiofS2PFENQ0/+bmZTsPKT4lChYC15yLI9YNLlAeZDbBLf4ODr7mq7Am7JcAeqROyaVjyQtzAY8vkd4oEsTB54LzX0zdMGaHmn0hhMu/2SsXFsUiJN+fxBDV6+6l88UeqfziUqMgg6d78K3EteLF0/Q9Sz+5RHrTczEk15S7TSUmgjlTKMorhcqr1Jk5Su9FyOw2pOKlOEpKwyUMynSAPtL0ble7SqqgSMxy08jywyvYjC9pqQLo1jgO+wR1rOHCMamxY3rb5dWibAZLrLYJItXG6BHmZExvI9aNdaJsBkustidjp0u4wYUTtwG/ULuRKo2lILn+nV/qZxRb5bKKVkAcdomalFi9xR+o8vEqtoqPPxGmE3G7Y1ftNzeBqsaZfq3gTTJgfYGKE+48mqnQerPn3Qi5io7rcSqBetJKZ1lRCncDmV4vrjU0D1htsgAmooDCGJvEb2RkqKJRSk5oi8x8VFE4UjTjPqtPBtp6+Hu5VKlQgcPE6dX9qfFSC2I3Kw4r1RAUBXjUAZxyLAQHeOTDlQVhFGxzg6JrSYGC/7GHD9yt+Q9EwB/dHSm2Y35ADJn4G8TodjF+wB14CukPtMCt7igsAAAAASUVORK5CYII="
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARNSURBVHgB7VpNaBRnGH6/b2Z2W4w2ISBKDUyl6iXQxku3UIvppSAUc6o9t8cWlJ6EFkygh/amUOjJQ+klLRTqoR79i0i8mCCC+AMZJWJQ0MVETHZ25/N93mQ234xRM7O7SQbywGRm8n0787zf+7w/szuKUtjlVw4qrQ7z4RBvPm0AGKMmlaLJMIpGZoLxwB5T8UG3f7B7m144YYiO0cbGydmoPFINLlRxIgaAfJeqnVfKfEwFADwyZ0qDMELjH1j5opAHwHUrc5bjHX7F97SaogLCRGZQe5pOUFGh1ZA2pAojnTQ4gA9r/lNYAxi+poJj04D1RuENcGkNEG3fT/V9X1PUvYfMlp2kwllST++SM/U/uVNnqRWovt2fGuoQQLw2cJRMz57XzlHPH1L53A+yz4OOSQgrvvDF728kD8AjMo/3edCSB4y3laJdBxZPanOkq3dkJcP+76jO24o3ZPlgLpW65PMx9KMJ9sT3lBW5YgA3rvd/S43dhxIkYiLR9oFXPuM8GCP31qiMN6/Dq465MBh7bPb4apDLA/Nf/vlWaTRvwB4pXf1FghayanxwqCkXkEUgO7yHjHCOuVmQ2QNCIEVeZPF8hlRtVsZir8QBarbsEPKaz/WN02RYPlH3XrkWVt3c/pvKl4/Twme/UlZkNiDcdyRx7jEh59Y/i0ZYRkIWLo8RG6VY894K0jA8jpWv7z3CHrqTWT5AZgm9+OZK89i7dopcXr2VYLwuNmqO3gbIaf6rf4W8e3uUnOkxyoLMHsBKxxKJyUM29fc/X57DUkkXKBANrcyEOfAe9vrRNTIsqazkcxmg+SaQiJBaWmW4P+KChcKVuPiSETDYzvWLsXGalo2ZEQPyIHMhk1Vb0nvdiofS2PFENQ0/+bmZTsPKT4lChYC15yLI9YNLlAeZDbBLf4ODr7mq7Am7JcAeqROyaVjyQtzAY8vkd4oEsTB54LzX0zdMGaHmn0hhMu/2SsXFsUiJN+fxBDV6+6l88UeqfziUqMgg6d78K3EteLF0/Q9Sz+5RHrTczEk15S7TSUmgjlTKMorhcqr1Jk5Su9FyOw2pOKlOEpKwyUMynSAPtL0ble7SqqgSMxy08jywyvYjC9pqQLo1jgO+wR1rOHCMamxY3rb5dWibAZLrLYJItXG6BHmZExvI9aNdaJsBkustidjp0u4wYUTtwG/ULuRKo2lILn+nV/qZxRb5bKKVkAcdomalFi9xR+o8vEqtoqPPxGmE3G7Y1ftNzeBqsaZfq3gTTJgfYGKE+48mqnQerPn3Qi5io7rcSqBetJKZ1lRCncDmV4vrjU0D1htsgAmooDCGJvEb2RkqKJRSk5oi8x8VFE4UjTjPqtPBtp6+Hu5VKlQgcPE6dX9qfFSC2I3Kw4r1RAUBXjUAZxyLAQHeOTDlQVhFGxzg6JrSYGC/7GHD9yt+Q9EwB/dHSm2Y35ADJn4G8TodjF+wB14CukPtMCt7igsAAAAASUVORK5CYII="
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                  checked
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARNSURBVHgB7VpNaBRnGH6/b2Z2W4w2ISBKDUyl6iXQxku3UIvppSAUc6o9t8cWlJ6EFkygh/amUOjJQ+klLRTqoR79i0i8mCCC+AMZJWJQ0MVETHZ25/N93mQ234xRM7O7SQbywGRm8n0787zf+7w/szuKUtjlVw4qrQ7z4RBvPm0AGKMmlaLJMIpGZoLxwB5T8UG3f7B7m144YYiO0cbGydmoPFINLlRxIgaAfJeqnVfKfEwFADwyZ0qDMELjH1j5opAHwHUrc5bjHX7F97SaogLCRGZQe5pOUFGh1ZA2pAojnTQ4gA9r/lNYAxi+poJj04D1RuENcGkNEG3fT/V9X1PUvYfMlp2kwllST++SM/U/uVNnqRWovt2fGuoQQLw2cJRMz57XzlHPH1L53A+yz4OOSQgrvvDF728kD8AjMo/3edCSB4y3laJdBxZPanOkq3dkJcP+76jO24o3ZPlgLpW65PMx9KMJ9sT3lBW5YgA3rvd/S43dhxIkYiLR9oFXPuM8GCP31qiMN6/Dq465MBh7bPb4apDLA/Nf/vlWaTRvwB4pXf1FghayanxwqCkXkEUgO7yHjHCOuVmQ2QNCIEVeZPF8hlRtVsZir8QBarbsEPKaz/WN02RYPlH3XrkWVt3c/pvKl4/Twme/UlZkNiDcdyRx7jEh59Y/i0ZYRkIWLo8RG6VY894K0jA8jpWv7z3CHrqTWT5AZgm9+OZK89i7dopcXr2VYLwuNmqO3gbIaf6rf4W8e3uUnOkxyoLMHsBKxxKJyUM29fc/X57DUkkXKBANrcyEOfAe9vrRNTIsqazkcxmg+SaQiJBaWmW4P+KChcKVuPiSETDYzvWLsXGalo2ZEQPyIHMhk1Vb0nvdiofS2PFENQ0/+bmZTsPKT4lChYC15yLI9YNLlAeZDbBLf4ODr7mq7Am7JcAeqROyaVjyQtzAY8vkd4oEsTB54LzX0zdMGaHmn0hhMu/2SsXFsUiJN+fxBDV6+6l88UeqfziUqMgg6d78K3EteLF0/Q9Sz+5RHrTczEk15S7TSUmgjlTKMorhcqr1Jk5Su9FyOw2pOKlOEpKwyUMynSAPtL0ble7SqqgSMxy08jywyvYjC9pqQLo1jgO+wR1rOHCMamxY3rb5dWibAZLrLYJItXG6BHmZExvI9aNdaJsBkustidjp0u4wYUTtwG/ULuRKo2lILn+nV/qZxRb5bKKVkAcdomalFi9xR+o8vEqtoqPPxGmE3G7Y1ftNzeBqsaZfq3gTTJgfYGKE+48mqnQerPn3Qi5io7rcSqBetJKZ1lRCncDmV4vrjU0D1htsgAmooDCGJvEb2RkqKJRSk5oi8x8VFE4UjTjPqtPBtp6+Hu5VKlQgcPE6dX9qfFSC2I3Kw4r1RAUBXjUAZxyLAQHeOTDlQVhFGxzg6JrSYGC/7GHD9yt+Q9EwB/dHSm2Y35ADJn4G8TodjF+wB14CukPtMCt7igsAAAAASUVORK5CYII="
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARNSURBVHgB7VpNaBRnGH6/b2Z2W4w2ISBKDUyl6iXQxku3UIvppSAUc6o9t8cWlJ6EFkygh/amUOjJQ+klLRTqoR79i0i8mCCC+AMZJWJQ0MVETHZ25/N93mQ234xRM7O7SQbywGRm8n0787zf+7w/szuKUtjlVw4qrQ7z4RBvPm0AGKMmlaLJMIpGZoLxwB5T8UG3f7B7m144YYiO0cbGydmoPFINLlRxIgaAfJeqnVfKfEwFADwyZ0qDMELjH1j5opAHwHUrc5bjHX7F97SaogLCRGZQe5pOUFGh1ZA2pAojnTQ4gA9r/lNYAxi+poJj04D1RuENcGkNEG3fT/V9X1PUvYfMlp2kwllST++SM/U/uVNnqRWovt2fGuoQQLw2cJRMz57XzlHPH1L53A+yz4OOSQgrvvDF728kD8AjMo/3edCSB4y3laJdBxZPanOkq3dkJcP+76jO24o3ZPlgLpW65PMx9KMJ9sT3lBW5YgA3rvd/S43dhxIkYiLR9oFXPuM8GCP31qiMN6/Dq465MBh7bPb4apDLA/Nf/vlWaTRvwB4pXf1FghayanxwqCkXkEUgO7yHjHCOuVmQ2QNCIEVeZPF8hlRtVsZir8QBarbsEPKaz/WN02RYPlH3XrkWVt3c/pvKl4/Twme/UlZkNiDcdyRx7jEh59Y/i0ZYRkIWLo8RG6VY894K0jA8jpWv7z3CHrqTWT5AZgm9+OZK89i7dopcXr2VYLwuNmqO3gbIaf6rf4W8e3uUnOkxyoLMHsBKxxKJyUM29fc/X57DUkkXKBANrcyEOfAe9vrRNTIsqazkcxmg+SaQiJBaWmW4P+KChcKVuPiSETDYzvWLsXGalo2ZEQPyIHMhk1Vb0nvdiofS2PFENQ0/+bmZTsPKT4lChYC15yLI9YNLlAeZDbBLf4ODr7mq7Am7JcAeqROyaVjyQtzAY8vkd4oEsTB54LzX0zdMGaHmn0hhMu/2SsXFsUiJN+fxBDV6+6l88UeqfziUqMgg6d78K3EteLF0/Q9Sz+5RHrTczEk15S7TSUmgjlTKMorhcqr1Jk5Su9FyOw2pOKlOEpKwyUMynSAPtL0ble7SqqgSMxy08jywyvYjC9pqQLo1jgO+wR1rOHCMamxY3rb5dWibAZLrLYJItXG6BHmZExvI9aNdaJsBkustidjp0u4wYUTtwG/ULuRKo2lILn+nV/qZxRb5bKKVkAcdomalFi9xR+o8vEqtoqPPxGmE3G7Y1ftNzeBqsaZfq3gTTJgfYGKE+48mqnQerPn3Qi5io7rcSqBetJKZ1lRCncDmV4vrjU0D1htsgAmooDCGJvEb2RkqKJRSk5oi8x8VFE4UjTjPqtPBtp6+Hu5VKlQgcPE6dX9qfFSC2I3Kw4r1RAUBXjUAZxyLAQHeOTDlQVhFGxzg6JrSYGC/7GHD9yt+Q9EwB/dHSm2Y35ADJn4G8TodjF+wB14CukPtMCt7igsAAAAASUVORK5CYII="
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                  checked
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARNSURBVHgB7VpNaBRnGH6/b2Z2W4w2ISBKDUyl6iXQxku3UIvppSAUc6o9t8cWlJ6EFkygh/amUOjJQ+klLRTqoR79i0i8mCCC+AMZJWJQ0MVETHZ25/N93mQ234xRM7O7SQbywGRm8n0787zf+7w/szuKUtjlVw4qrQ7z4RBvPm0AGKMmlaLJMIpGZoLxwB5T8UG3f7B7m144YYiO0cbGydmoPFINLlRxIgaAfJeqnVfKfEwFADwyZ0qDMELjH1j5opAHwHUrc5bjHX7F97SaogLCRGZQe5pOUFGh1ZA2pAojnTQ4gA9r/lNYAxi+poJj04D1RuENcGkNEG3fT/V9X1PUvYfMlp2kwllST++SM/U/uVNnqRWovt2fGuoQQLw2cJRMz57XzlHPH1L53A+yz4OOSQgrvvDF728kD8AjMo/3edCSB4y3laJdBxZPanOkq3dkJcP+76jO24o3ZPlgLpW65PMx9KMJ9sT3lBW5YgA3rvd/S43dhxIkYiLR9oFXPuM8GCP31qiMN6/Dq465MBh7bPb4apDLA/Nf/vlWaTRvwB4pXf1FghayanxwqCkXkEUgO7yHjHCOuVmQ2QNCIEVeZPF8hlRtVsZir8QBarbsEPKaz/WN02RYPlH3XrkWVt3c/pvKl4/Twme/UlZkNiDcdyRx7jEh59Y/i0ZYRkIWLo8RG6VY894K0jA8jpWv7z3CHrqTWT5AZgm9+OZK89i7dopcXr2VYLwuNmqO3gbIaf6rf4W8e3uUnOkxyoLMHsBKxxKJyUM29fc/X57DUkkXKBANrcyEOfAe9vrRNTIsqazkcxmg+SaQiJBaWmW4P+KChcKVuPiSETDYzvWLsXGalo2ZEQPyIHMhk1Vb0nvdiofS2PFENQ0/+bmZTsPKT4lChYC15yLI9YNLlAeZDbBLf4ODr7mq7Am7JcAeqROyaVjyQtzAY8vkd4oEsTB54LzX0zdMGaHmn0hhMu/2SsXFsUiJN+fxBDV6+6l88UeqfziUqMgg6d78K3EteLF0/Q9Sz+5RHrTczEk15S7TSUmgjlTKMorhcqr1Jk5Su9FyOw2pOKlOEpKwyUMynSAPtL0ble7SqqgSMxy08jywyvYjC9pqQLo1jgO+wR1rOHCMamxY3rb5dWibAZLrLYJItXG6BHmZExvI9aNdaJsBkustidjp0u4wYUTtwG/ULuRKo2lILn+nV/qZxRb5bKKVkAcdomalFi9xR+o8vEqtoqPPxGmE3G7Y1ftNzeBqsaZfq3gTTJgfYGKE+48mqnQerPn3Qi5io7rcSqBetJKZ1lRCncDmV4vrjU0D1htsgAmooDCGJvEb2RkqKJRSk5oi8x8VFE4UjTjPqtPBtp6+Hu5VKlQgcPE6dX9qfFSC2I3Kw4r1RAUBXjUAZxyLAQHeOTDlQVhFGxzg6JrSYGC/7GHD9yt+Q9EwB/dHSm2Y35ADJn4G8TodjF+wB14CukPtMCt7igsAAAAASUVORK5CYII="
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARNSURBVHgB7VpNaBRnGH6/b2Z2W4w2ISBKDUyl6iXQxku3UIvppSAUc6o9t8cWlJ6EFkygh/amUOjJQ+klLRTqoR79i0i8mCCC+AMZJWJQ0MVETHZ25/N93mQ234xRM7O7SQbywGRm8n0787zf+7w/szuKUtjlVw4qrQ7z4RBvPm0AGKMmlaLJMIpGZoLxwB5T8UG3f7B7m144YYiO0cbGydmoPFINLlRxIgaAfJeqnVfKfEwFADwyZ0qDMELjH1j5opAHwHUrc5bjHX7F97SaogLCRGZQe5pOUFGh1ZA2pAojnTQ4gA9r/lNYAxi+poJj04D1RuENcGkNEG3fT/V9X1PUvYfMlp2kwllST++SM/U/uVNnqRWovt2fGuoQQLw2cJRMz57XzlHPH1L53A+yz4OOSQgrvvDF728kD8AjMo/3edCSB4y3laJdBxZPanOkq3dkJcP+76jO24o3ZPlgLpW65PMx9KMJ9sT3lBW5YgA3rvd/S43dhxIkYiLR9oFXPuM8GCP31qiMN6/Dq465MBh7bPb4apDLA/Nf/vlWaTRvwB4pXf1FghayanxwqCkXkEUgO7yHjHCOuVmQ2QNCIEVeZPF8hlRtVsZir8QBarbsEPKaz/WN02RYPlH3XrkWVt3c/pvKl4/Twme/UlZkNiDcdyRx7jEh59Y/i0ZYRkIWLo8RG6VY894K0jA8jpWv7z3CHrqTWT5AZgm9+OZK89i7dopcXr2VYLwuNmqO3gbIaf6rf4W8e3uUnOkxyoLMHsBKxxKJyUM29fc/X57DUkkXKBANrcyEOfAe9vrRNTIsqazkcxmg+SaQiJBaWmW4P+KChcKVuPiSETDYzvWLsXGalo2ZEQPyIHMhk1Vb0nvdiofS2PFENQ0/+bmZTsPKT4lChYC15yLI9YNLlAeZDbBLf4ODr7mq7Am7JcAeqROyaVjyQtzAY8vkd4oEsTB54LzX0zdMGaHmn0hhMu/2SsXFsUiJN+fxBDV6+6l88UeqfziUqMgg6d78K3EteLF0/Q9Sz+5RHrTczEk15S7TSUmgjlTKMorhcqr1Jk5Su9FyOw2pOKlOEpKwyUMynSAPtL0ble7SqqgSMxy08jywyvYjC9pqQLo1jgO+wR1rOHCMamxY3rb5dWibAZLrLYJItXG6BHmZExvI9aNdaJsBkustidjp0u4wYUTtwG/ULuRKo2lILn+nV/qZxRb5bKKVkAcdomalFi9xR+o8vEqtoqPPxGmE3G7Y1ftNzeBqsaZfq3gTTJgfYGKE+48mqnQerPn3Qi5io7rcSqBetJKZ1lRCncDmV4vrjU0D1htsgAmooDCGJvEb2RkqKJRSk5oi8x8VFE4UjTjPqtPBtp6+Hu5VKlQgcPE6dX9qfFSC2I3Kw4r1RAUBXjUAZxyLAQHeOTDlQVhFGxzg6JrSYGC/7GHD9yt+Q9EwB/dHSm2Y35ADJn4G8TodjF+wB14CukPtMCt7igsAAAAASUVORK5CYII="
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                  checked
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARNSURBVHgB7VpNaBRnGH6/b2Z2W4w2ISBKDUyl6iXQxku3UIvppSAUc6o9t8cWlJ6EFkygh/amUOjJQ+klLRTqoR79i0i8mCCC+AMZJWJQ0MVETHZ25/N93mQ234xRM7O7SQbywGRm8n0787zf+7w/szuKUtjlVw4qrQ7z4RBvPm0AGKMmlaLJMIpGZoLxwB5T8UG3f7B7m144YYiO0cbGydmoPFINLlRxIgaAfJeqnVfKfEwFADwyZ0qDMELjH1j5opAHwHUrc5bjHX7F97SaogLCRGZQe5pOUFGh1ZA2pAojnTQ4gA9r/lNYAxi+poJj04D1RuENcGkNEG3fT/V9X1PUvYfMlp2kwllST++SM/U/uVNnqRWovt2fGuoQQLw2cJRMz57XzlHPH1L53A+yz4OOSQgrvvDF728kD8AjMo/3edCSB4y3laJdBxZPanOkq3dkJcP+76jO24o3ZPlgLpW65PMx9KMJ9sT3lBW5YgA3rvd/S43dhxIkYiLR9oFXPuM8GCP31qiMN6/Dq465MBh7bPb4apDLA/Nf/vlWaTRvwB4pXf1FghayanxwqCkXkEUgO7yHjHCOuVmQ2QNCIEVeZPF8hlRtVsZir8QBarbsEPKaz/WN02RYPlH3XrkWVt3c/pvKl4/Twme/UlZkNiDcdyRx7jEh59Y/i0ZYRkIWLo8RG6VY894K0jA8jpWv7z3CHrqTWT5AZgm9+OZK89i7dopcXr2VYLwuNmqO3gbIaf6rf4W8e3uUnOkxyoLMHsBKxxKJyUM29fc/X57DUkkXKBANrcyEOfAe9vrRNTIsqazkcxmg+SaQiJBaWmW4P+KChcKVuPiSETDYzvWLsXGalo2ZEQPyIHMhk1Vb0nvdiofS2PFENQ0/+bmZTsPKT4lChYC15yLI9YNLlAeZDbBLf4ODr7mq7Am7JcAeqROyaVjyQtzAY8vkd4oEsTB54LzX0zdMGaHmn0hhMu/2SsXFsUiJN+fxBDV6+6l88UeqfziUqMgg6d78K3EteLF0/Q9Sz+5RHrTczEk15S7TSUmgjlTKMorhcqr1Jk5Su9FyOw2pOKlOEpKwyUMynSAPtL0ble7SqqgSMxy08jywyvYjC9pqQLo1jgO+wR1rOHCMamxY3rb5dWibAZLrLYJItXG6BHmZExvI9aNdaJsBkustidjp0u4wYUTtwG/ULuRKo2lILn+nV/qZxRb5bKKVkAcdomalFi9xR+o8vEqtoqPPxGmE3G7Y1ftNzeBqsaZfq3gTTJgfYGKE+48mqnQerPn3Qi5io7rcSqBetJKZ1lRCncDmV4vrjU0D1htsgAmooDCGJvEb2RkqKJRSk5oi8x8VFE4UjTjPqtPBtp6+Hu5VKlQgcPE6dX9qfFSC2I3Kw4r1RAUBXjUAZxyLAQHeOTDlQVhFGxzg6JrSYGC/7GHD9yt+Q9EwB/dHSm2Y35ADJn4G8TodjF+wB14CukPtMCt7igsAAAAASUVORK5CYII="
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARNSURBVHgB7VpNaBRnGH6/b2Z2W4w2ISBKDUyl6iXQxku3UIvppSAUc6o9t8cWlJ6EFkygh/amUOjJQ+klLRTqoR79i0i8mCCC+AMZJWJQ0MVETHZ25/N93mQ234xRM7O7SQbywGRm8n0787zf+7w/szuKUtjlVw4qrQ7z4RBvPm0AGKMmlaLJMIpGZoLxwB5T8UG3f7B7m144YYiO0cbGydmoPFINLlRxIgaAfJeqnVfKfEwFADwyZ0qDMELjH1j5opAHwHUrc5bjHX7F97SaogLCRGZQe5pOUFGh1ZA2pAojnTQ4gA9r/lNYAxi+poJj04D1RuENcGkNEG3fT/V9X1PUvYfMlp2kwllST++SM/U/uVNnqRWovt2fGuoQQLw2cJRMz57XzlHPH1L53A+yz4OOSQgrvvDF728kD8AjMo/3edCSB4y3laJdBxZPanOkq3dkJcP+76jO24o3ZPlgLpW65PMx9KMJ9sT3lBW5YgA3rvd/S43dhxIkYiLR9oFXPuM8GCP31qiMN6/Dq465MBh7bPb4apDLA/Nf/vlWaTRvwB4pXf1FghayanxwqCkXkEUgO7yHjHCOuVmQ2QNCIEVeZPF8hlRtVsZir8QBarbsEPKaz/WN02RYPlH3XrkWVt3c/pvKl4/Twme/UlZkNiDcdyRx7jEh59Y/i0ZYRkIWLo8RG6VY894K0jA8jpWv7z3CHrqTWT5AZgm9+OZK89i7dopcXr2VYLwuNmqO3gbIaf6rf4W8e3uUnOkxyoLMHsBKxxKJyUM29fc/X57DUkkXKBANrcyEOfAe9vrRNTIsqazkcxmg+SaQiJBaWmW4P+KChcKVuPiSETDYzvWLsXGalo2ZEQPyIHMhk1Vb0nvdiofS2PFENQ0/+bmZTsPKT4lChYC15yLI9YNLlAeZDbBLf4ODr7mq7Am7JcAeqROyaVjyQtzAY8vkd4oEsTB54LzX0zdMGaHmn0hhMu/2SsXFsUiJN+fxBDV6+6l88UeqfziUqMgg6d78K3EteLF0/Q9Sz+5RHrTczEk15S7TSUmgjlTKMorhcqr1Jk5Su9FyOw2pOKlOEpKwyUMynSAPtL0ble7SqqgSMxy08jywyvYjC9pqQLo1jgO+wR1rOHCMamxY3rb5dWibAZLrLYJItXG6BHmZExvI9aNdaJsBkustidjp0u4wYUTtwG/ULuRKo2lILn+nV/qZxRb5bKKVkAcdomalFi9xR+o8vEqtoqPPxGmE3G7Y1ftNzeBqsaZfq3gTTJgfYGKE+48mqnQerPn3Qi5io7rcSqBetJKZ1lRCncDmV4vrjU0D1htsgAmooDCGJvEb2RkqKJRSk5oi8x8VFE4UjTjPqtPBtp6+Hu5VKlQgcPE6dX9qfFSC2I3Kw4r1RAUBXjUAZxyLAQHeOTDlQVhFGxzg6JrSYGC/7GHD9yt+Q9EwB/dHSm2Y35ADJn4G8TodjF+wB14CukPtMCt7igsAAAAASUVORK5CYII="
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                  checked
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARNSURBVHgB7VpNaBRnGH6/b2Z2W4w2ISBKDUyl6iXQxku3UIvppSAUc6o9t8cWlJ6EFkygh/amUOjJQ+klLRTqoR79i0i8mCCC+AMZJWJQ0MVETHZ25/N93mQ234xRM7O7SQbywGRm8n0787zf+7w/szuKUtjlVw4qrQ7z4RBvPm0AGKMmlaLJMIpGZoLxwB5T8UG3f7B7m144YYiO0cbGydmoPFINLlRxIgaAfJeqnVfKfEwFADwyZ0qDMELjH1j5opAHwHUrc5bjHX7F97SaogLCRGZQe5pOUFGh1ZA2pAojnTQ4gA9r/lNYAxi+poJj04D1RuENcGkNEG3fT/V9X1PUvYfMlp2kwllST++SM/U/uVNnqRWovt2fGuoQQLw2cJRMz57XzlHPH1L53A+yz4OOSQgrvvDF728kD8AjMo/3edCSB4y3laJdBxZPanOkq3dkJcP+76jO24o3ZPlgLpW65PMx9KMJ9sT3lBW5YgA3rvd/S43dhxIkYiLR9oFXPuM8GCP31qiMN6/Dq465MBh7bPb4apDLA/Nf/vlWaTRvwB4pXf1FghayanxwqCkXkEUgO7yHjHCOuVmQ2QNCIEVeZPF8hlRtVsZir8QBarbsEPKaz/WN02RYPlH3XrkWVt3c/pvKl4/Twme/UlZkNiDcdyRx7jEh59Y/i0ZYRkIWLo8RG6VY894K0jA8jpWv7z3CHrqTWT5AZgm9+OZK89i7dopcXr2VYLwuNmqO3gbIaf6rf4W8e3uUnOkxyoLMHsBKxxKJyUM29fc/X57DUkkXKBANrcyEOfAe9vrRNTIsqazkcxmg+SaQiJBaWmW4P+KChcKVuPiSETDYzvWLsXGalo2ZEQPyIHMhk1Vb0nvdiofS2PFENQ0/+bmZTsPKT4lChYC15yLI9YNLlAeZDbBLf4ODr7mq7Am7JcAeqROyaVjyQtzAY8vkd4oEsTB54LzX0zdMGaHmn0hhMu/2SsXFsUiJN+fxBDV6+6l88UeqfziUqMgg6d78K3EteLF0/Q9Sz+5RHrTczEk15S7TSUmgjlTKMorhcqr1Jk5Su9FyOw2pOKlOEpKwyUMynSAPtL0ble7SqqgSMxy08jywyvYjC9pqQLo1jgO+wR1rOHCMamxY3rb5dWibAZLrLYJItXG6BHmZExvI9aNdaJsBkustidjp0u4wYUTtwG/ULuRKo2lILn+nV/qZxRb5bKKVkAcdomalFi9xR+o8vEqtoqPPxGmE3G7Y1ftNzeBqsaZfq3gTTJgfYGKE+48mqnQerPn3Qi5io7rcSqBetJKZ1lRCncDmV4vrjU0D1htsgAmooDCGJvEb2RkqKJRSk5oi8x8VFE4UjTjPqtPBtp6+Hu5VKlQgcPE6dX9qfFSC2I3Kw4r1RAUBXjUAZxyLAQHeOTDlQVhFGxzg6JrSYGC/7GHD9yt+Q9EwB/dHSm2Y35ADJn4G8TodjF+wB14CukPtMCt7igsAAAAASUVORK5CYII="
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARNSURBVHgB7VpNaBRnGH6/b2Z2W4w2ISBKDUyl6iXQxku3UIvppSAUc6o9t8cWlJ6EFkygh/amUOjJQ+klLRTqoR79i0i8mCCC+AMZJWJQ0MVETHZ25/N93mQ234xRM7O7SQbywGRm8n0787zf+7w/szuKUtjlVw4qrQ7z4RBvPm0AGKMmlaLJMIpGZoLxwB5T8UG3f7B7m144YYiO0cbGydmoPFINLlRxIgaAfJeqnVfKfEwFADwyZ0qDMELjH1j5opAHwHUrc5bjHX7F97SaogLCRGZQe5pOUFGh1ZA2pAojnTQ4gA9r/lNYAxi+poJj04D1RuENcGkNEG3fT/V9X1PUvYfMlp2kwllST++SM/U/uVNnqRWovt2fGuoQQLw2cJRMz57XzlHPH1L53A+yz4OOSQgrvvDF728kD8AjMo/3edCSB4y3laJdBxZPanOkq3dkJcP+76jO24o3ZPlgLpW65PMx9KMJ9sT3lBW5YgA3rvd/S43dhxIkYiLR9oFXPuM8GCP31qiMN6/Dq465MBh7bPb4apDLA/Nf/vlWaTRvwB4pXf1FghayanxwqCkXkEUgO7yHjHCOuVmQ2QNCIEVeZPF8hlRtVsZir8QBarbsEPKaz/WN02RYPlH3XrkWVt3c/pvKl4/Twme/UlZkNiDcdyRx7jEh59Y/i0ZYRkIWLo8RG6VY894K0jA8jpWv7z3CHrqTWT5AZgm9+OZK89i7dopcXr2VYLwuNmqO3gbIaf6rf4W8e3uUnOkxyoLMHsBKxxKJyUM29fc/X57DUkkXKBANrcyEOfAe9vrRNTIsqazkcxmg+SaQiJBaWmW4P+KChcKVuPiSETDYzvWLsXGalo2ZEQPyIHMhk1Vb0nvdiofS2PFENQ0/+bmZTsPKT4lChYC15yLI9YNLlAeZDbBLf4ODr7mq7Am7JcAeqROyaVjyQtzAY8vkd4oEsTB54LzX0zdMGaHmn0hhMu/2SsXFsUiJN+fxBDV6+6l88UeqfziUqMgg6d78K3EteLF0/Q9Sz+5RHrTczEk15S7TSUmgjlTKMorhcqr1Jk5Su9FyOw2pOKlOEpKwyUMynSAPtL0ble7SqqgSMxy08jywyvYjC9pqQLo1jgO+wR1rOHCMamxY3rb5dWibAZLrLYJItXG6BHmZExvI9aNdaJsBkustidjp0u4wYUTtwG/ULuRKo2lILn+nV/qZxRb5bKKVkAcdomalFi9xR+o8vEqtoqPPxGmE3G7Y1ftNzeBqsaZfq3gTTJgfYGKE+48mqnQerPn3Qi5io7rcSqBetJKZ1lRCncDmV4vrjU0D1htsgAmooDCGJvEb2RkqKJRSk5oi8x8VFE4UjTjPqtPBtp6+Hu5VKlQgcPE6dX9qfFSC2I3Kw4r1RAUBXjUAZxyLAQHeOTDlQVhFGxzg6JrSYGC/7GHD9yt+Q9EwB/dHSm2Y35ADJn4G8TodjF+wB14CukPtMCt7igsAAAAASUVORK5CYII="
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                  checked
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="bg-primary rounded border border-transparent hover:border-[#147AFF]"
+            >
+              <div class="flex items-start gap-4 px-4 pt-4 relative">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARNSURBVHgB7VpNaBRnGH6/b2Z2W4w2ISBKDUyl6iXQxku3UIvppSAUc6o9t8cWlJ6EFkygh/amUOjJQ+klLRTqoR79i0i8mCCC+AMZJWJQ0MVETHZ25/N93mQ234xRM7O7SQbywGRm8n0787zf+7w/szuKUtjlVw4qrQ7z4RBvPm0AGKMmlaLJMIpGZoLxwB5T8UG3f7B7m144YYiO0cbGydmoPFINLlRxIgaAfJeqnVfKfEwFADwyZ0qDMELjH1j5opAHwHUrc5bjHX7F97SaogLCRGZQe5pOUFGh1ZA2pAojnTQ4gA9r/lNYAxi+poJj04D1RuENcGkNEG3fT/V9X1PUvYfMlp2kwllST++SM/U/uVNnqRWovt2fGuoQQLw2cJRMz57XzlHPH1L53A+yz4OOSQgrvvDF728kD8AjMo/3edCSB4y3laJdBxZPanOkq3dkJcP+76jO24o3ZPlgLpW65PMx9KMJ9sT3lBW5YgA3rvd/S43dhxIkYiLR9oFXPuM8GCP31qiMN6/Dq465MBh7bPb4apDLA/Nf/vlWaTRvwB4pXf1FghayanxwqCkXkEUgO7yHjHCOuVmQ2QNCIEVeZPF8hlRtVsZir8QBarbsEPKaz/WN02RYPlH3XrkWVt3c/pvKl4/Twme/UlZkNiDcdyRx7jEh59Y/i0ZYRkIWLo8RG6VY894K0jA8jpWv7z3CHrqTWT5AZgm9+OZK89i7dopcXr2VYLwuNmqO3gbIaf6rf4W8e3uUnOkxyoLMHsBKxxKJyUM29fc/X57DUkkXKBANrcyEOfAe9vrRNTIsqazkcxmg+SaQiJBaWmW4P+KChcKVuPiSETDYzvWLsXGalo2ZEQPyIHMhk1Vb0nvdiofS2PFENQ0/+bmZTsPKT4lChYC15yLI9YNLlAeZDbBLf4ODr7mq7Am7JcAeqROyaVjyQtzAY8vkd4oEsTB54LzX0zdMGaHmn0hhMu/2SsXFsUiJN+fxBDV6+6l88UeqfziUqMgg6d78K3EteLF0/Q9Sz+5RHrTczEk15S7TSUmgjlTKMorhcqr1Jk5Su9FyOw2pOKlOEpKwyUMynSAPtL0ble7SqqgSMxy08jywyvYjC9pqQLo1jgO+wR1rOHCMamxY3rb5dWibAZLrLYJItXG6BHmZExvI9aNdaJsBkustidjp0u4wYUTtwG/ULuRKo2lILn+nV/qZxRb5bKKVkAcdomalFi9xR+o8vEqtoqPPxGmE3G7Y1ftNzeBqsaZfq3gTTJgfYGKE+48mqnQerPn3Qi5io7rcSqBetJKZ1lRCncDmV4vrjU0D1htsgAmooDCGJvEb2RkqKJRSk5oi8x8VFE4UjTjPqtPBtp6+Hu5VKlQgcPE6dX9qfFSC2I3Kw4r1RAUBXjUAZxyLAQHeOTDlQVhFGxzg6JrSYGC/7GHD9yt+Q9EwB/dHSm2Y35ADJn4G8TodjF+wB14CukPtMCt7igsAAAAASUVORK5CYII="
+                  alt=""
+                  class="w-[48px] h-[48px]"
+                />
+                <div>
+                  <h3 class="text-base font-medium">Plugin name</h3>
+                  <p class="mt-2 text-xs text-[#74778E]">
+                    Have an existing website already? Select this option to Have
+                  </p>
+                  <h5 class="mt-6 text-xs italic">
+                    <span class="text-[#74778E]">By: </span>WPDeveloper
+                  </h5>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="custom-round absolute top-5 right-4"
+                />
+              </div>
+              <!-- ratings -->
+              <div class="mt-6 border-t border-secondary px-4 py-3">
+                <div class="text-[#FF9446] text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+
+                  <span class="text-[#74778E] text-xs ml-1">(12,23)</span>
+                </div>
+                <h5 class="mt-[7px] text-xs text-[#74778E]">
+                  5M+ Active Installations
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- next -->
+        <div
+          class="bg-[#232A4E] rounded-b flex items-center justify-end py-4 pr-[56px]"
+        >
+          <button
+            class="bg-[#147AFF] px-8 py-3 text-base font-semibold rounded"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+  </body>
+</html>
