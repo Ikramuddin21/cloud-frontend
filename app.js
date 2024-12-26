@@ -31,9 +31,9 @@ serverTypeSelected.forEach((item) => {
 blueprintName.forEach((item) => {
   item.addEventListener("click", (event) => {
     console.log(event.target.checked);
-    blueprintName.forEach((el) => el.classList.remove("border-[#147AFF]"));
+    blueprintName.forEach((el) => el.classList.remove("!border-[#147AFF]"));
 
-    item.classList.add("border-[#147AFF]");
+    item.classList.add("!border-[#147AFF]");
   });
 });
 
